@@ -1,6 +1,9 @@
 FROM jupyter/notebook
 RUN apt-get update -qq && \
     DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
+        gfortran \
+        libopenblas-dev \
+        liblapack-dev
         libatlas-base-dev \
         libfreetype6-dev \
         libpng12-dev
