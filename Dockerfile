@@ -12,4 +12,5 @@ RUN apt-get update -qq && \
     DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
     libjpeg-dev
 RUN pip3 --no-cache-dir install scikit-learn scikit-image
+RUN pip3 --no-cache-dir install redis
 
